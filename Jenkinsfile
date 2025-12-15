@@ -19,14 +19,6 @@ pipeline{
                 '''
             }
         }
-        stage('install dependencies'){
-            steps{
-                sh '''
-                . venv/bin/activate
-                pip install -r requirements.txt
-                '''
-            }
-        }
         stage('Ejecutar script python'){
             steps{
                 sh '''
