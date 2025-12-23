@@ -1,6 +1,6 @@
 
 
-pipeline{
+/* pipeline{
     agent any
     environment{
         MI_VARIABLE = 'esto es una variable mia'
@@ -47,8 +47,8 @@ pipeline{
             sh 'rm -rf venv'
         }
     }
-}
-/* pipeline{
+} */
+ pipeline{
     agent any
     stages{
         stage('Conexion a otro pipeline'){
@@ -81,4 +81,4 @@ pipeline{
             sh 'rm -rf venv'
         }
     }
-} */
+} 
